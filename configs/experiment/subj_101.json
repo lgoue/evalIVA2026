@@ -204,7 +204,12 @@
                     "optional": true
                 }
             ]
-        }
+        },
+         {
+            "type": "finish",
+            "name": "Thank you",
+            "content": "Thank you for your participation! <br> *required fields<br><br>"
+         }
     ],
     "remoteFailService": "/fail"
 }
