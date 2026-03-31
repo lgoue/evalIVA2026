@@ -1,0 +1,38 @@
+#
+# Copyright (C) Patrik Jonell and contributors 2021.
+# Licensed under the MIT license. See LICENSE.txt file in the project root for details.
+#
+
+version: '3'
+services:
+  webmushra:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    ports:
+      - "8000:80"
+    command: /start-reload.sh
+    depends_on:
+      - db
+    environment:
+      MONGO_USERNAME: genea
+      MONGO_PASSWORD: geneapasspass
+  debug:
+    build:
+      context: .
+      dockerfile: debug-docker
+    stdin_open: true
+    tty: true
+    depends_on:
+      - db
+      - webmushra
+  db:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: genea
+      MONGO_INITDB_ROOT_PASSWORD: geneapasspass

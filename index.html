@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<!--
+(C) Copyright AudioLabs 2017
+
+This source code is protected by copyright law and international treaties.
+This source code is made available to You subject to the terms and conditions
+of the Software License for the webMUSHRA.js Software. Said terms and conditions
+have been made available to You prior to Your download of this source code.
+By downloading this source code You agree to be bound by the above mentionend
+terms and conditions, which can also be found here:
+https://www.audiolabs-erlangen.de/resources/webMUSHRA. Any unauthorised use
+of this source code may result in severe civil and criminal penalties, and
+will be prosecuted to the maximum extent possible under law.
+
+Portions Copyright (C) Patrik Jonell and contributors 2021.
+
+This file was edited 2021-09-02 by Patrik Jonell. All rights reserved.
+These contributions are licensed under the MIT license. See LICENSE.txt for details.
+-->
+
+<head>
+
+  <link rel="icon" href="data:,">
+  <meta charset="utf-8">
+  <title>HEMVIP</title>
+  <meta name="description" content="HEMVIP (based on webMUSHRA) by Patrik Jonell and contributors">
+  <meta name="author" content="Patrik Jonell and contributors">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- jQuery / jQuery Mobile -->
+  <link type="text/css" href="design/jquery.mobile-theme/themes/default/jquery.mobile.icons.min.css" rel="stylesheet" />
+  <link type="text/css" href="lib/external/jquery.mobile/jquery.mobile-1.4.4.css" rel="stylesheet" />
+  <link type="text/css" href="design/jquery.mobile-theme/themes/default/alabs_0_3.css" rel="stylesheet" />
+  <link type="text/css"
+    href="lib/external/jquery.mobile/plugins/jQuery-Mobile-Progress-Bar-with-Percentage/src/css/tolito-1.0.1.css"
+    rel="stylesheet" />
+  <link type="text/css"
+    href="lib/external/jquery.mobile/plugins/jQuery-Mobile-Icon-Pack/original/jqm-icon-pack-2.0-original.css"
+    rel="stylesheet" />
+  <link type="text/css" href="lib/external/wmSlider/slider.min.css" rel="stylesheet" />
+  <link type="text/css" href="lib/external/wmSlider/slider.pips.css" rel="stylesheet" />
+
+  <script src="lib/external/jquery/jquery-2.1.1.min.js"></script>
+  <script src="lib/external/jquery.mobile/jquery.mobile-1.4.4.js"></script>
+  <script
+    src="lib/external/jquery.mobile/plugins/jQuery-Mobile-Progress-Bar-with-Percentage/src/js/tolito-1.0.1.js"></script>
+  <script src="lib/external/jquery.mobile/patches/vertical-slider.js"></script>
+
+
+
+  <!--noUiSlider -->
+  <script src="lib/external/wmSlider/slider.min.js"></script>
+
+  <!-- keyboard support -->
+  <script src="lib/external/mousetrap/mousetrap.min.js"></script>
+
+  <!-- nls -->
+  <script>
+    var nls = new Object();
+  </script>
+
+  <!-- webMUSHRA -->
+  <!-- build:js:generic lib/webMUSHRA.js -->
+
+  <!-- video -->
+  <script src="lib/webmushra/video/VideoVisualizer.js"></script>
+  <script src="lib/webmushra/video/VideoPCVisualizer.js"></script>
+	  <script src="lib/webmushra/video/VideoVisualizerMQ.js"></script>
+
+  <!-- business -->
+  <script src="lib/webmushra/business/DataSender.js"></script>
+  <script src="lib/webmushra/business/ErrorHandler.js"></script>
+  <script src="lib/webmushra/business/PageManager.js"></script>
+  <script src="lib/webmushra/business/PageTemplateRenderer.js"></script>
+
+  <!-- datamodel -->
+  <script src="lib/webmushra/datamodel/MUSHRARating.js"></script>
+  <script src="lib/webmushra/datamodel/Participant.js"></script>
+  <script src="lib/webmushra/datamodel/Session.js"></script>
+  <script src="lib/webmushra/datamodel/Stimulus.js"></script>
+	  <script src="lib/webmushra/datamodel/Question.js"></script>
+  <script src="lib/webmushra/datamodel/Trial.js"></script>
+
+  <!-- misc -->
+  <script src="lib/webmushra/misc/LikertScale.js"></script>
+  <script src="lib/webmushra/misc/Localizer.js"></script>
+  <script src="lib/webmushra/misc/Shuffle.js"></script>
+
+  <!-- pages -->
+  <script src="lib/webmushra/pages/FinishPage.js"></script>
+  <script src="lib/webmushra/pages/GenericPage.js"></script>
+  <script src="lib/webmushra/pages/VideoPage.js"></script>
+  <script src="lib/webmushra/pages/VideoPC.js"></script>
+	  <script src="lib/webmushra/pages/VideoMQ.js"></script>
+  <script src="lib/webmushra/pages/AudioTestPage.js"></script>
+
+
+
+  <script src="lib/webmushra/nls/nls.js"></script>
+  <!-- /build -->
+
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <link rel="stylesheet" href="design/style.css">
+</head>
+
+<body data-theme="a">
+
+  <div class="header" id="header"></div>
+
+  <div id="container">
+
+    <div id="page_progressbar"></div>
+    <h3 class="ui-bar ui-bar-a ui-corner-all" id="page_header"></h3>
+    <div class="ui-body ui-body-a ui-corner-all" id="page_content">
+    </div>
+    <br />
+    <div class="ui-body ui-body-a ui-corner-all" id="page_navigation">
+    </div>
+
+
+
+  </div>
+  <div data-role="popup" data-dismissible="false" data-history="false" data-transition="flip" positionTo="window"
+    id="popupErrors">
+    <div id="popupErrorsContent">Errors:<br /></div>
+  </div>
+
+  <div data-role="popup" data-history="false" data-position-to="#page_content" data-transition="slidedown"
+    id="popupDialog" data-overlay-theme="a" data-theme="c" data-dismissible="false" class="ui-corner-all">
+    <div data-role="header" class="ui-corner-top" style="width : 57.5em; background-color: #FFb500;">
+      <h1 id="popHeader"></h1>
+    </div>
+    <div id="popupResultsContent" style="background-color: white;" class="ui-corner-bottom ui-content">
+    </div>
+  </div>
+  <!-- build:js:generic startup.min.js -->
+  <script src="startup.js"></script>
+  <!-- /build -->
+</body>
+
+</html>

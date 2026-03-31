@@ -1,0 +1,33 @@
+{
+  "name": "HEMVIP",
+  "version": "1.0.0",
+  "description": "Experiment framework based on webMUSHRA for comparing videos in a MUSHRA-like way",
+  "author": "Patrik Jonell and contributors",
+  "repository": "https://github.com/jonepatr/hemvip",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "start": ""
+  },
+  "keywords": [
+    "HEMVIP"
+  ],
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compress": "^1.4.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^1.3.0",
+    "grunt-contrib-uglify": "^2.2.0",
+    "grunt-jsdoc": "^2.1.0",
+    "grunt-processhtml": "^0.4.1",
+    "jsdoc": "^3.4.3"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "dependencies": {
+    "grunt-cli": "^1.3.2"
+  }
+}
