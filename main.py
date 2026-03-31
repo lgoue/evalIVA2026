@@ -107,10 +107,7 @@ def save(sessionJSON=Form(...)):
         {"$set": {"status": "DONE", "ended": ended_date}},
     )
     code = db.codes.find_one({"testId": data["testId"]})
-    return RedirectResponse(
-        url=f"https://app.prolific.co/submissions/complete?cc={code["code"]}",
-        status_code=303
-    )
+    return code["code"]
 
 
 @app.get("/prolific/{test_id}")
