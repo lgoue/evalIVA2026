@@ -21,7 +21,7 @@ app.mount("/prolific/design", StaticFiles(directory="design"), name="design")
 
 def connect_to_db():
     client = MongoClient(
-        "mongodb://db:27017",
+        os.environ.get("MONGO_URL"),
         username=os.environ["MONGO_USERNAME"],
         password=os.environ["MONGO_PASSWORD"],
     )
