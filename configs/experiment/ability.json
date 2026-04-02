@@ -6,16 +6,11 @@
         {
             "type": "generic",
             "id": "first_page",
-            "name": "Instructions page",
-            "content": "<br><div style=\"text-align: left\"> Hello </div>"
+            "name": "Instructions and Consent page",
+            "content": "<p>Your participation in this study is entirely voluntary, and you have the right to withdraw at any time without penalty or negative consequences.<br> If you choose to withdraw, any data collected from you will be deleted and not included in the final analysis. <br><br>The purpose of this study is to assess the perception of different versions of a virtual character.<br> You will be asked to watch 18 videos of a virtual character and answer questions about your perception of their behavior. <br>Finally, we will ask for some demographic information to ensure unbiased demographic representation. <br><br> This study will take approximately 15 minutes to complete and will be rewarded 4.45$.<br> The data collected in this study will be used for research purposes only. <br> <br>If you have any questions, concerns, or feedback related to this study, please feel free to contact Lucie Galland at lucie.galland@lislab.fr. <br><br> Click Next to consent </p>"
+
         },
-        {
-            "type": "consent",
-            "id": "onsent_page",
-            "name": "Consent",
-            "mustConsent": true,
-            "content": "<p>Your participation in this study is entirely voluntary, and you have the right to withdraw at any time without penalty or negative consequences. If you choose to withdraw, any data collected from you will be deleted and not included in the final analysis. <br>The purpose of this study is to assess the perception of different versions of a virtual character. You will be asked to watch 18 videos of a virtual character and answer questions about your perception of their behavior. Finally, we will ask for some demographic information to ensure unbiased demographic representation. <br> This study will take approximately 15 minutes to complete and will be rewarded 4.45$. The data collected in this study will be used for research purposes only. <br> If you have any questions, concerns, or feedback related to this study, please feel free to contact Lucie Galland at lucie.galland@lislab.fr. </p>"
-        },
+
         {
             "type": "videomq",
             "id": "ability_1",
@@ -51,6 +46,10 @@
             "stimuli": [
                 [
                     "CA1",
+                    "https://vimeo.com/1178527208/fea7911afc?share=copy&fl=sv&fe=ci;autopause=0&amp;player_id=0&amp;app_id=205435"
+                ],
+                [
+                    "CA2",
                     "https://vimeo.com/1178527208/fea7911afc?share=copy&fl=sv&fe=ci;autopause=0&amp;player_id=0&amp;app_id=205435"
                 ]
 
@@ -92,7 +91,6 @@
 
             ]
         },
-
         {
             "type": "finish",
             "name": "Thank you",
@@ -128,41 +126,9 @@
                     ]
                 },
                 {
-                    "type": "text",
-                    "label": "*What's your nationality?",
-                    "name": "nationality"
-                },
-                {
-                    "type": "options",
-                    "name": "education",
-                    "label": "*What's your level of education?",
-                    "response": [
-                        {
-                            "value": "some_highschool",
-                            "label": "Some high school"
-                        },
-                        {
-                            "value": "highschool",
-                            "label": "High School diploma"
-                        },
-                        {
-                            "value": "bachelors",
-                            "label": "Bachelor's degree"
-                        },
-                        {
-                            "value": "masters",
-                            "label": "Master's Degree"
-                        },
-                        {
-                            "value": "doctorate",
-                            "label": "Doctoral Degree"
-                        }
-                    ]
-                },
-                {
                     "type": "likert",
-                    "label": "How skilled are you with computers?",
-                    "name": "video_games",
+                    "label": "How familiar are you with virtual characters ?",
+                    "name": "video_characters",
                     "response": [
                         {
                             "value": "1",
@@ -193,77 +159,51 @@
                             "label": "7 - Extremely"
                         }
                     ]
+                
+        },
+        {
+            "type": "likert",
+            "label": "How much do you trust technology in general ?",
+            "name": "trust",
+            "response": [
+                {
+                    "value": "1",
+                    "label": "1 - Not at all"
                 },
                 {
-                    "type": "options",
-                    "name": "task_difficulty",
-                    "label": "*Please indicate to what extent you agree or disagree with this statement: <br>\"This task was really easy\"",
-                    "response": [
-                        {
-                            "value": "disagree",
-                            "label": "Disagree"
-                        },
-                        {
-                            "value": "slightly_disagree",
-                            "label": "Slightly disagree"
-                        },
-                        {
-                            "value": "neutral",
-                            "label": "Neither agree nor disagree"
-                        },
-                        {
-                            "value": "slightly_agree",
-                            "label": "Slightly agree"
-                        },
-                        {
-                            "value": "agree",
-                            "label": "Agree"
-                        }
-                    ]
+                    "value": "2",
+                    "label": "2"
                 },
                 {
-                    "type": "long_text",
-                    "label": "*What did you like the most about doing this study?",
-                    "name": "liked_most"
+                    "value": "3",
+                    "label": "3"
                 },
                 {
-                    "type": "long_text",
-                    "label": "*What did you like the least about doing this study?",
-                    "name": "liked_least"
+                    "value": "4",
+                    "label": "4 - Moderately"
                 },
                 {
-                    "type": "options",
-                    "name": "ratingvspair",
-                    "label": "*What type of evaluation do you prefer?",
-                    "response": [
-                        {
-                            "value": "rating",
-                            "label": "Rating videos on a scale from 1 to 5"
-                        },
-                        {
-                            "value": "pairwise",
-                            "label": "Selecting my preferred video out of 2 videos"
-                        }
-                    ]
+                    "value": "5",
+                    "label": "5"
                 },
                 {
-                    "type": "long_text",
-                    "label": "*Was the compensation given for your participation in this study adequate? If not, state what would be appropriate and why.",
-                    "name": "compenation"
+                    "value": "6",
+                    "label": "6"
                 },
                 {
-                    "type": "long_text",
-                    "label": "*Is there anything you would like us to change about this evaluation?",
-                    "name": "change"
-                },
-                {
-                    "type": "long_text",
-                    "label": "Any other comments?",
-                    "name": "other",
-                    "optional": true
+                    "value": "7",
+                    "label": "7 - Extremely"
                 }
             ]
+        },
+        {
+            "type": "long_text",
+            "label": "Any other comments?",
+            "name": "other",
+            "optional": true
         }
+    ]
+}
     ],
     "remoteFailService": "/fail"
 }

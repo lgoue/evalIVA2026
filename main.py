@@ -106,8 +106,7 @@ def save(sessionJSON=Form(...)):
         {"userId": data["userId"], "testId": data["testId"]},
         {"$set": {"status": "DONE", "ended": ended_date}},
     )
-    #code = db.codes.find_one({"testId": data["testId"]})
-    return data["testId"]#code["code"]
+    return code["code"]
 
 
 @app.get("/prolific/{test_id}")

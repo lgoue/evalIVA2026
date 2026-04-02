@@ -6,31 +6,85 @@
         {
             "type": "generic",
             "id": "first_page",
-            "name": "Rating virtual character gesticulation: Instructions page",
-            "content": "<br><div style=\"text-align: left\">Hello</div>"
+            "name": "Instructions page",
+            "content": "<p>Your participation in this study is entirely voluntary, and you have the right to withdraw at any time without penalty or negative consequences. If you choose to withdraw, any data collected from you will be deleted and not included in the final analysis. <br>The purpose of this study is to assess the perception of different versions of a virtual character. You will be asked to watch 18 videos of a virtual character and answer questions about your perception of their behavior. Finally, we will ask for some demographic information to ensure unbiased demographic representation. <br> This study will take approximately 15 minutes to complete and will be rewarded 4.45$. The data collected in this study will be used for research purposes only. <br> If you have any questions, concerns, or feedback related to this study, please feel free to contact Lucie Galland at lucie.galland@lislab.fr. <br><br> Click Next to consent </p>"
+
         },
+
         {
             "type": "videomq",
-            "id": "subject_72",
-            "name": "Page 13 of 22",
-            "content": "In which video are the character\u2019s movements most human-like?",
+            "id": "ability_1",
+            "name": "Page 1 of 3",
+            "content": "Please watch this video and answer the following questions about the virtual character.",
             "question": [
                 [
-                    "Q1",
-                    "Ability Q 1"
+                    "Q1A",
+                    "The virtual character is very capable of performing its job."
                 ],
                 [
-                    "Q2",
-                    "AbilityQ2"
+                    "Q2A",
+                    "The virtual character is known to be successful at the things it tries to do."
+                ],
+                [
+                    "Q3A",
+                    "The virtual character has much knowledge about the work that needs done."
+                ],
+                [
+                    "Q4A",
+                    "I feel very confident about the virtual character's skills."
+                ],
+                [
+                    "Q5A",
+                    "The virtual character has specialized capabilities that can increase our performance"
+                ],
+                [
+                    "Q6A",
+                    "The virtual character is well qualified."
                 ]
 
             ],
             "stimuli": [
                 [
-                    "C1",
+                    "CA1",
                     "https://vimeo.com/1178527208/fea7911afc?share=copy&fl=sv&fe=ci;autopause=0&amp;player_id=0&amp;app_id=205435"
                 ]
-                
+
+            ]
+        },
+        {
+            "type": "videomq",
+            "id": "benevolence_1",
+            "name": "Page 2 of 3",
+            "content": "Please watch this video and answer the following questions about the virtual character.",
+            "question": [
+                [
+                    "Q1B",
+                    "The virtual character is very concerned about my welfare."
+                ],
+                [
+                    "Q2B",
+                    "My needs and desires are very important to the virtual character."
+                ],
+                [
+                    "Q3B",
+                    "The virtual character would not knowingly do anything to hurt me."
+                ],
+                [
+                    "Q4B",
+                    "The virtual character really looks out for what is important to me."
+                ],
+                [
+                    "Q5B",
+                    "The virtual character will go out of its way to help me."
+                ]
+
+            ],
+            "stimuli": [
+                [
+                    "C1B",
+                    "https://vimeo.com/1178527208/fea7911afc?share=copy&fl=sv&fe=ci;autopause=0&amp;player_id=0&amp;app_id=205435"
+                ]
+
             ]
         },
 

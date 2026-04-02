@@ -1,0 +1,855 @@
+{
+    "testname": "Experiment",
+    "stopOnErrors": true,
+    "remoteService": "/save",
+    "pages": [
+        {
+            "type": "generic",
+            "id": "first_page",
+            "name": "Instructions and Consent page",
+            "content": "<p>Your participation in this study is entirely voluntary, and you have the right to withdraw at any time without penalty or negative consequences.<br>If you choose to withdraw, any data collected from you will be deleted and excluded from the final analysis.<br><br>The purpose of this study is to evaluate perceptions of different versions of a virtual character.<br>You will be asked to watch 17 videos featuring a virtual character and answer questions about your perception of their behavior.<br>Finally, we will collect some demographic information to ensure balanced demographic representation.<br><br>This study will take approximately 15 minutes to complete, and you will receive a compensation of $4.45.<br>The data collected in this study will be used solely for research purposes.<br><br>If you have any questions, concerns, or feedback regarding this study, please feel free to contact Lucie Galland at lucie.galland@lislab.fr.<br><br>Click \"Next\" to provide your consent.</p>"
+
+        },
+        {
+            "type": "audiotest",
+            "id": "audiotest",
+            "name": "Audio test",
+            "content": "<p>This study requires working stereo audio.<br>Please listen to the following series of numbers and input the numbers you hear coming from the left and the right channel.</p>"
+        },
+        [
+            "random",
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_low_male",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_low_male",
+                        "https://vimeo.com/1179512525/3b0e980c37?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_medium_male",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_medium_male",
+                        "https://vimeo.com/1179512577/1b933b5780?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_male_high",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_male_high",
+                        "https://vimeo.com/1179512551/773bec67a3?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            }
+        ],
+        [
+            "random",
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "attention_check_agree",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "attention_check_male_agree",
+                        "https://vimeo.com/1179512497/1136828da4?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "low_inst1",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "low_ability_inst1_v1_male",
+                        "https://vimeo.com/1179493265/bf945ebbbb?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst1_v2_male",
+                        "https://vimeo.com/1179493287/56f0e97483?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "low_inst2",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "low_ability_inst2_v1_male",
+                        "https://vimeo.com/1179493304/b847a955df?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst2_v2_male",
+                        "https://vimeo.com/1179493317/1f28dbd942?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "low_inst3",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "low_ability_inst3_v1_male",
+                        "https://vimeo.com/1179493332/7a619b956e?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst3_v2_male",
+                        "https://vimeo.com/1179493346/fc90799e15?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "low_inst4",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "low_ability_inst_v1_male",
+                        "https://vimeo.com/1179493232/fae3b5a919?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst4_v2_male",
+                        "https://vimeo.com/1179493247/e0a60716cd?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "medium_inst3",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "medium_ability_inst3_v1_male",
+                        "https://vimeo.com/1179493484/34f9872cf6?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst3_v2_male",
+                        "https://vimeo.com/1179493502/f445f38fb5?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "medium_inst4",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "medium_ability_inst4_v1_male",
+                        "https://vimeo.com/1179493516/06c578fe5b?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst4_v2_male",
+                        "https://vimeo.com/1179493535/aa912551c5?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "medium_inst2",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "medium_ability_inst2_v1_male",
+                        "https://vimeo.com/1179493447/cdfcacf134?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst2_v2_male",
+                        "https://vimeo.com/1179493467/7ff1717b72?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "medium_inst1",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "medium_ability_inst1_v1_male",
+                        "https://vimeo.com/1179493404/3f2e99d435?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst1_v2_male",
+                        "https://vimeo.com/1179493421/c3f807ae97?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "high_inst1",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "high_ability_inst1_v1_male",
+                        "https://vimeo.com/1179493118/2d4d18667a?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst1_v2_male",
+                        "https://vimeo.com/1179493144/baacc31011?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "high_inst2",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "high_ability_inst2_v1_male",
+                        "https://vimeo.com/1179493161/894ac892fa?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst2_v2_male",
+                        "https://vimeo.com/1179493175/c32a85deac?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "high_inst3",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "high_ability_inst3_v1_male",
+                        "https://vimeo.com/1179493197/8e89201cda?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst3_v2_male",
+                        "https://vimeo.com/1179493219/e0d1bb05a8?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "high_inst4",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "Q1A",
+                        "The virtual character is very capable of performing its job."
+                    ],
+                    [
+                        "Q2A",
+                        "The virtual character is known to be successful at the things it tries to do."
+                    ],
+                    [
+                        "Q3A",
+                        "The virtual character has much knowledge about the work that needs done."
+                    ],
+                    [
+                        "Q4A",
+                        "I feel very confident about the virtual character's skills."
+                    ],
+                    [
+                        "Q5A",
+                        "The virtual character has specialized capabilities that can increase our performance"
+                    ],
+                    [
+                        "Q6A",
+                        "The virtual character is well qualified."
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "high_ability_inst4_v1_male",
+                        "https://vimeo.com/1179493232/fae3b5a919?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst4_v2_male",
+                        "https://vimeo.com/1179493247/e0a60716cd?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            }
+        ],
+        {
+
+            "type": "finish",
+            "name": "Thank you",
+            "content": "Thank you for your participation! <br> *required fields<br><br>",
+            "showResults": false,
+            "writeResults": true,
+            "questionnaire": [
+                {
+                    "type": "number",
+                    "label": "*What's your age in years?",
+                    "name": "age",
+                    "min": 0,
+                    "max": 100,
+                    "default": 0
+                },
+                {
+                    "type": "options",
+                    "name": "gender",
+                    "label": "*How would you identify yourself (gender)?",
+                    "response": [
+                        {
+                            "value": "female",
+                            "label": "Female"
+                        },
+                        {
+                            "value": "male",
+                            "label": "Male"
+                        },
+                        {
+                            "value": "other",
+                            "label": "Other"
+                        }
+                    ]
+                },
+                {
+                    "type": "likert",
+                    "label": "How familiar are you with virtual characters ?",
+                    "name": "video_characters",
+                    "response": [
+                        {
+                            "value": "1",
+                            "label": "1 - Not at all"
+                        },
+                        {
+                            "value": "2",
+                            "label": "2"
+                        },
+                        {
+                            "value": "3",
+                            "label": "3"
+                        },
+                        {
+                            "value": "4",
+                            "label": "4 - Moderately"
+                        },
+                        {
+                            "value": "5",
+                            "label": "5"
+                        },
+                        {
+                            "value": "6",
+                            "label": "6"
+                        },
+                        {
+                            "value": "7",
+                            "label": "7 - Extremely"
+                        }
+                    ]
+
+                },
+                {
+                    "type": "likert",
+                    "label": "How much do you trust technology in general ?",
+                    "name": "trust",
+                    "response": [
+                        {
+                            "value": "1",
+                            "label": "1 - Not at all"
+                        },
+                        {
+                            "value": "2",
+                            "label": "2"
+                        },
+                        {
+                            "value": "3",
+                            "label": "3"
+                        },
+                        {
+                            "value": "4",
+                            "label": "4 - Moderately"
+                        },
+                        {
+                            "value": "5",
+                            "label": "5"
+                        },
+                        {
+                            "value": "6",
+                            "label": "6"
+                        },
+                        {
+                            "value": "7",
+                            "label": "7 - Extremely"
+                        }
+                    ]
+                },
+                {
+                    "type": "long_text",
+                    "label": "Any other comments?",
+                    "name": "other",
+                    "optional": true
+                }
+            ]
+        }
+    ],
+    "remoteFailService": "/fail"
+}
