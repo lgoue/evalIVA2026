@@ -21,7 +21,7 @@ app.mount("/prolific/design", StaticFiles(directory="design"), name="design")
 
 def connect_to_db():
     client = MongoClient(
-        "mongodb://db:27017",
+        os.environ.get("MONGO_URL"),
         username=os.environ["MONGO_USERNAME"],
         password=os.environ["MONGO_PASSWORD"],
     )
@@ -106,6 +106,10 @@ def save(sessionJSON=Form(...)):
         {"userId": data["userId"], "testId": data["testId"]},
         {"$set": {"status": "DONE", "ended": ended_date}},
     )
+<<<<<<< HEAD
+=======
+    code = db.codes.find_one({"testId": data["testId"]})
+>>>>>>> 11a568727c062492687f1ce3d1b90577c8e447aa
     return code["code"]
 
 
