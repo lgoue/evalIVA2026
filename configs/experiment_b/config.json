@@ -11,10 +11,38 @@
 
         },
         {
-            "type": "generic",
+            "type": "instruction",
             "id": "instruction_page",
             "name": "Instructions page",
-            "content": "<p>In the following, you will watch videos of a virtual character acting as <b>a forest guide</b>.<br><b>Your goal is to get out of the forest as quickly as possible</b>.<br>Wooden signs show the direction toward the <b>nearest exit</b>; however, the guide might advise you to take another way if the <b>indicated route is not safe</b>.</p>"
+            "content": "<p>In the following, you will watch videos of a virtual character acting as <b>a forest guide</b>.<br><b>Your goal is to get out of the forest as quickly as possible</b>.<br>Wooden signs show the direction toward the <b>nearest exit</b>; however, the guide might advise you to take another way if the <b>indicated route is not safe</b>.<br> The time you spend on each page is recorded and we will not be able to reward you if you answer quicker than the length of the videos.<br><br> Please answer the following questions to ensure you understood these instructions.</p>",
+            "question": [
+                [
+                    "QAtt1",
+                    "Your goal is to get out of the forest as quick as possible ?"
+                ],
+                [
+                    "QAtt2",
+                    "All path are safe ?"
+                ],
+                [
+                    "QAtt3",
+                    "The virtual character will be here to guide you through the forest ?"
+                ],
+                [
+                    "QAtt4",
+                    "The wooden sign points towards the quickest but possible unsafe path ?"
+                ],
+                [
+                    "QAtt1",
+                    "I am going to get payed even if I do not watch the videos fully ?"
+                ]
+            ],
+            "stimuli": [
+                [
+                    "audiotestmanstronglyagree",
+                    "https://vimeo.com/1179880389/f3a6728745?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                ]
+            ]
         },
         {
             "random": true,
@@ -407,19 +435,19 @@
                 ],
                 "stimuli": [
                     [
-                        "low_ability_inst1_v1_male",
+                        "low_benevolence_inst1_v1_male",
                         "https://vimeo.com/1179881127/bfecacfb97?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst1_v2_male",
+                        "low_benevolence_inst1_v2_male",
                         "https://vimeo.com/1179881074/5d3ad0582a?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst1_v1_female",
+                        "low_benevolence_inst1_v1_female",
                         "https://vimeo.com/1179881301/b534031e5b?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst1_v2_female",
+                        "low_benevolence_inst1_v2_female",
                         "https://vimeo.com/1179881347/aa4ec97de6?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -460,19 +488,19 @@
                 ],
                 "stimuli": [
                     [
-                        "low_ability_inst2_v1_male",
+                        "low_benevolence_inst2_v1_male",
                         "https://vimeo.com/1179881101/26d14cb661?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst2_v2_male",
+                        "low_benevolence_inst2_v2_male",
                         "https://vimeo.com/1179881132/e2460ee76a?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst2_v1_female",
+                        "low_benevolence_inst2_v1_female",
                         "https://vimeo.com/1179881348/cf1e155ed6?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst2_v2_female",
+                        "low_benevolence_inst2_v2_female",
                         "https://vimeo.com/1179881319/8e7bd91eb5?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -514,19 +542,19 @@
                 ],
                 "stimuli": [
                     [
-                        "low_ability_inst3_v1_male",
+                        "low_benevolence_inst3_v1_male",
                         "https://vimeo.com/1179881073/2f7d8f0f62?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst3_v2_male",
+                        "low_benevolence_inst3_v2_male",
                         "https://vimeo.com/1179881095/d5740c3865?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst3_v1_female",
+                        "low_benevolence_inst3_v1_female",
                         "https://vimeo.com/1179881346/59b1470fc5?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst3_v2_female",
+                        "low_benevolence_inst3_v2_female",
                         "https://vimeo.com/1179881320/63561ddfaf?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -568,19 +596,19 @@
                 ],
                 "stimuli": [
                     [
-                        "low_ability_inst_v1_male",
+                        "low_benevolence_inst_v1_male",
                         "https://vimeo.com/1179881097/567cf02550?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst4_v2_male",
+                        "low_benevolence_inst4_v2_male",
                         "https://vimeo.com/1179881135/0482dcbe10?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst_v1_female",
+                        "low_benevolence_inst_v1_female",
                         "https://vimeo.com/1179881322/683e4b77d8?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "low_ability_inst4_v2_female",
+                        "low_benevolence_inst4_v2_female",
                         "https://vimeo.com/1179881302/fe79225236?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -622,19 +650,19 @@
                 ],
                 "stimuli": [
                     [
-                        "medium_ability_inst3_v1_male",
+                        "medium_benevolence_inst3_v1_male",
                         "https://vimeo.com/1179880663/4f90f72f32?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst3_v2_male",
+                        "medium_benevolence_inst3_v2_male",
                         "https://vimeo.com/1179880661/549c9164e8?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst3_v1_female",
+                        "medium_benevolence_inst3_v1_female",
                         "https://vimeo.com/1179880903/1ba1533ef2?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst3_v2_female",
+                        "medium_benevolence_inst3_v2_female",
                         "https://vimeo.com/1179880855/3b1eccd370?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -676,19 +704,19 @@
                 ],
                 "stimuli": [
                     [
-                        "medium_ability_inst4_v1_male",
+                        "medium_benevolence_inst4_v1_male",
                         "https://vimeo.com/1179880641/99d4211ba1?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst4_v2_male",
+                        "medium_benevolence_inst4_v2_male",
                         "https://vimeo.com/1179880662/5495e9bcfa?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst4_v1_female",
+                        "medium_benevolence_inst4_v1_female",
                         "https://vimeo.com/1179880876/af5f13e1ff?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst4_v2_female",
+                        "medium_benevolence_inst4_v2_female",
                         "https://vimeo.com/1179880877/916fd9ce99?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -730,19 +758,19 @@
                 ],
                 "stimuli": [
                     [
-                        "medium_ability_inst2_v1_male",
+                        "medium_benevolence_inst2_v1_male",
                         "https://vimeo.com/1179880685/3716eee24c?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst2_v2_male",
+                        "medium_benevolence_inst2_v2_male",
                         "https://vimeo.com/1179880686/9c784a2b8e?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst2_v1_female",
+                        "medium_benevolence_inst2_v1_female",
                         "https://vimeo.com/1179880905/cea8e950f1?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst2_v2_female",
+                        "medium_benevolence_inst2_v2_female",
                         "https://vimeo.com/1179880854/baaf4cc946?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -784,19 +812,19 @@
                 ],
                 "stimuli": [
                     [
-                        "medium_ability_inst1_v1_male",
+                        "medium_benevolence_inst1_v1_male",
                         "https://vimeo.com/1179880640/6819cc2cca?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst1_v2_male",
+                        "medium_benevolence_inst1_v2_male",
                         "https://vimeo.com/1179880684/ced04af5e2?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst1_v1_female",
+                        "medium_benevolence_inst1_v1_female",
                         "https://vimeo.com/1179880874/84d6cd67a2?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "medium_ability_inst1_v2_female",
+                        "medium_benevolence_inst1_v2_female",
                         "https://vimeo.com/1179880856/ff71782216?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -838,19 +866,19 @@
                 ],
                 "stimuli": [
                     [
-                        "high_ability_inst1_v1_male",
+                        "high_benevolence_inst1_v1_male",
                         "https://vimeo.com/1179881501/46b5fd75b6?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst1_v2_male",
+                        "high_benevolence_inst1_v2_male",
                         "https://vimeo.com/1179881558/9628cbd445?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst1_v1_female",
+                        "high_benevolence_inst1_v1_female",
                         "https://vimeo.com/1179881684/db06527373?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst1_v2_female",
+                        "high_benevolence_inst1_v2_female",
                         "https://vimeo.com/1179881687/a052b029ae?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -892,19 +920,19 @@
                 ],
                 "stimuli": [
                     [
-                        "high_ability_inst2_v1_male",
+                        "high_benevolence_inst2_v1_male",
                         "https://vimeo.com/1179881530/9de951475f?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst2_v2_male",
+                        "high_benevolence_inst2_v2_male",
                         "https://vimeo.com/1179881503/a7da70666d?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst2_v1_female",
+                        "high_benevolence_inst2_v1_female",
                         "https://vimeo.com/1179881673/60a80db632?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst2_v2_female",
+                        "high_benevolence_inst2_v2_female",
                         "https://vimeo.com/1179881681/b83df88ba5?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -946,19 +974,19 @@
                 ],
                 "stimuli": [
                     [
-                        "high_ability_inst3_v1_male",
+                        "high_benevolence_inst3_v1_male",
                         "https://vimeo.com/1179881502/e6571ae9c0?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst3_v2_male",
+                        "high_benevolence_inst3_v2_male",
                         "https://vimeo.com/1179881531/01377cfc25?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst3_v1_female",
+                        "high_benevolence_inst3_v1_female",
                         "https://vimeo.com/1179881670/70a1467e14?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst3_v2_female",
+                        "high_benevolence_inst3_v2_female",
                         "https://vimeo.com/1179881674/e4b969ee2b?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
@@ -1000,19 +1028,19 @@
                 ],
                 "stimuli": [
                     [
-                        "high_ability_inst4_v1_male",
+                        "high_benevolence_inst4_v1_male",
                         "https://vimeo.com/1179881553/d97dea50b7?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst4_v2_male",
+                        "high_benevolence_inst4_v2_male",
                         "https://vimeo.com/1179881559/66c0031d0a?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst4_v1_female",
+                        "high_benevolence_inst4_v1_female",
                         "https://vimeo.com/1179881633/94080a0d47?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ],
                     [
-                        "high_ability_inst4_v2_female",
+                        "high_benevolence_inst4_v2_female",
                         "https://vimeo.com/1179881632/5517c93fd3?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
                     ]
 
