@@ -82,6 +82,9 @@ function addPagesToPageManager(_pageManager, _pages) {
       } else if (pageConfig.type == "videopc") {
         var videoPCPage = new VideoPC(_pageManager, pageTemplateRenderer, session, config, pageConfig, errorHandler, config.language);
         _pageManager.addPage(videoPCPage);
+      }else if (pageConfig.type == "instruction") {
+        var videoPCPage = new Instruction(_pageManager, pageTemplateRenderer, session, config, pageConfig, errorHandler, config.language);
+        _pageManager.addPage(videoPCPage);
       }
         else if (pageConfig.type == "videomq") {
         var videoMQPage = new VideoMQ(_pageManager, pageTemplateRenderer, session, config, pageConfig, errorHandler, config.language);

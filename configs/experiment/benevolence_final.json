@@ -1,0 +1,1138 @@
+{
+    "testname": "Experiment",
+    "stopOnErrors": true,
+    "remoteService": "/save",
+    "pages": [
+        {
+            "type": "generic",
+            "id": "first_page",
+            "name": "Consent page",
+            "content": "<p>Your participation in this study is entirely voluntary, and you have the right to withdraw at any time without penalty or negative consequences.<br>If you choose to withdraw, any data collected from you will be deleted and excluded from the final analysis.<br><br>The purpose of this study is to evaluate perceptions of different versions of a virtual character.<br>You will be asked to watch 17 videos featuring a virtual character and answer questions about your perception of their behavior.<br>Finally, we will collect some demographic information to ensure balanced demographic representation.<br><br>This study will take approximately 15 minutes to complete, and you will receive a compensation of $4.45.<br>The data collected in this study will be used solely for research purposes.<br><br>If you have any questions, concerns, or feedback regarding this study, please feel free to contact Lucie Galland at lucie.galland@lis-lab.fr.<br><br>Click \"Next\" to provide your consent.</p>"
+
+        },
+        {
+            "type": "generic",
+            "id": "instruction_page",
+            "name": "Instructions page",
+            "content": "<p>In the following, you will watch videos of a virtual character acting as <b>a forest guide</b>.<br><b>Your goal is to get out of the forest as quickly as possible</b>.<br>Wooden signs show the direction toward the <b>nearest exit</b>; however, the guide might advise you to take another way if the <b>indicated route is not safe</b>.</p>"
+        },
+        {
+            "random": true,
+            "type": "videomq",
+            "id": "test_audio",
+            "name": "Test audio",
+            "content": "Please <b> turn on your audio </b> watch this video and answer the following questions about the virtual character.",
+            "question": [
+                [
+                    "Q1A",
+                    "What did the character tell you to check ?"
+                ]
+            ],
+            "stimuli": [
+                [
+                    "audiotestmanstronglyagree",
+                    "https://vimeo.com/1179880389/f3a6728745?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                ],
+                [
+                    "audiotestwomanneitheragreedisagree",
+                    "https://vimeo.com/1179880483/9b24747131?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                ]
+
+            ]
+        },
+        [
+            "random",
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_low_male",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_low_male",
+                        "https://vimeo.com/1179881072/647c9c8eb3?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_low_female",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_low_female",
+                        "https://vimeo.com/1179881300/51f4319948?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_medium_male",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_medium_male",
+                        "https://vimeo.com/1179880642/55dd20d4b2?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_medium_female",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_medium_female",
+                        "https://vimeo.com/1179880904/a651047674?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_male_high",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_male_high",
+                        "https://vimeo.com/1179881529/dda695a5b2?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "controle_female_high",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "controle_female_high",
+                        "https://vimeo.com/1179881631/428bd74e3c?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            }
+        ],
+        [
+            "random",
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "attention_check_stronglydisagree_male",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "attention_check_male_stronglydisagree",
+                        "https://vimeo.com/1179880390/6bc27eac96?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "attention_check_agree_female",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "attention_check_female_agree",
+                        "https://vimeo.com/1179880482/cb88365ec9?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "low_inst1",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+                ],
+                "stimuli": [
+                    [
+                        "low_ability_inst1_v1_male",
+                        "https://vimeo.com/1179881127/bfecacfb97?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst1_v2_male",
+                        "https://vimeo.com/1179881074/5d3ad0582a?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst1_v1_female",
+                        "https://vimeo.com/1179881301/b534031e5b?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst1_v2_female",
+                        "https://vimeo.com/1179881347/aa4ec97de6?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "low_inst2",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "low_ability_inst2_v1_male",
+                        "https://vimeo.com/1179881101/26d14cb661?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst2_v2_male",
+                        "https://vimeo.com/1179881132/e2460ee76a?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst2_v1_female",
+                        "https://vimeo.com/1179881348/cf1e155ed6?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst2_v2_female",
+                        "https://vimeo.com/1179881319/8e7bd91eb5?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "low_inst3",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "low_ability_inst3_v1_male",
+                        "https://vimeo.com/1179881073/2f7d8f0f62?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst3_v2_male",
+                        "https://vimeo.com/1179881095/d5740c3865?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst3_v1_female",
+                        "https://vimeo.com/1179881346/59b1470fc5?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst3_v2_female",
+                        "https://vimeo.com/1179881320/63561ddfaf?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "low_inst4",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "low_ability_inst_v1_male",
+                        "https://vimeo.com/1179881097/567cf02550?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst4_v2_male",
+                        "https://vimeo.com/1179881135/0482dcbe10?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst_v1_female",
+                        "https://vimeo.com/1179881322/683e4b77d8?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "low_ability_inst4_v2_female",
+                        "https://vimeo.com/1179881302/fe79225236?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "medium_inst3",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "medium_ability_inst3_v1_male",
+                        "https://vimeo.com/1179880663/4f90f72f32?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst3_v2_male",
+                        "https://vimeo.com/1179880661/549c9164e8?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst3_v1_female",
+                        "https://vimeo.com/1179880903/1ba1533ef2?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst3_v2_female",
+                        "https://vimeo.com/1179880855/3b1eccd370?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "medium_inst4",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "medium_ability_inst4_v1_male",
+                        "https://vimeo.com/1179880641/99d4211ba1?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst4_v2_male",
+                        "https://vimeo.com/1179880662/5495e9bcfa?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst4_v1_female",
+                        "https://vimeo.com/1179880876/af5f13e1ff?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst4_v2_female",
+                        "https://vimeo.com/1179880877/916fd9ce99?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "medium_inst2",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "medium_ability_inst2_v1_male",
+                        "https://vimeo.com/1179880685/3716eee24c?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst2_v2_male",
+                        "https://vimeo.com/1179880686/9c784a2b8e?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst2_v1_female",
+                        "https://vimeo.com/1179880905/cea8e950f1?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst2_v2_female",
+                        "https://vimeo.com/1179880854/baaf4cc946?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "medium_inst1",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "medium_ability_inst1_v1_male",
+                        "https://vimeo.com/1179880640/6819cc2cca?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst1_v2_male",
+                        "https://vimeo.com/1179880684/ced04af5e2?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst1_v1_female",
+                        "https://vimeo.com/1179880874/84d6cd67a2?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "medium_ability_inst1_v2_female",
+                        "https://vimeo.com/1179880856/ff71782216?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "high_inst1",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "high_ability_inst1_v1_male",
+                        "https://vimeo.com/1179881501/46b5fd75b6?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst1_v2_male",
+                        "https://vimeo.com/1179881558/9628cbd445?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst1_v1_female",
+                        "https://vimeo.com/1179881684/db06527373?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst1_v2_female",
+                        "https://vimeo.com/1179881687/a052b029ae?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "high_inst2",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "high_ability_inst2_v1_male",
+                        "https://vimeo.com/1179881530/9de951475f?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst2_v2_male",
+                        "https://vimeo.com/1179881503/a7da70666d?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst2_v1_female",
+                        "https://vimeo.com/1179881673/60a80db632?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst2_v2_female",
+                        "https://vimeo.com/1179881681/b83df88ba5?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "high_inst3",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "high_ability_inst3_v1_male",
+                        "https://vimeo.com/1179881502/e6571ae9c0?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst3_v2_male",
+                        "https://vimeo.com/1179881531/01377cfc25?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst3_v1_female",
+                        "https://vimeo.com/1179881670/70a1467e14?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst3_v2_female",
+                        "https://vimeo.com/1179881674/e4b969ee2b?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            },
+
+            {
+                "random": true,
+                "type": "videomq",
+                "id": "high_inst4",
+                "name": "Rate the virtual character behavior",
+                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "question": [
+                    [
+                        "QA1",
+                        "I feel very confident about the virtual character's knowledge of the safer and quicker path."
+                    ],
+                    [
+                        "QA2",
+                        "The virtual character is very capable of showing the right path. "
+                    ],
+                    [
+                        "QB1",
+                        "The virtual character will go out of its way to help me. "
+                    ],
+                    [
+                        "QB2",
+                        "My needs and desires are very important to the virtual character."
+                    ],
+                    [
+                        "QT1",
+                        "I would follow the virtual character's advice. "
+                    ],
+                    [
+                        "QHB",
+                        "The virtual character behaviour makes me think of human behaviour "
+                    ]
+
+                ],
+                "stimuli": [
+                    [
+                        "high_ability_inst4_v1_male",
+                        "https://vimeo.com/1179881553/d97dea50b7?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst4_v2_male",
+                        "https://vimeo.com/1179881559/66c0031d0a?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst4_v1_female",
+                        "https://vimeo.com/1179881633/94080a0d47?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ],
+                    [
+                        "high_ability_inst4_v2_female",
+                        "https://vimeo.com/1179881632/5517c93fd3?fl=ml&fe=ec;autopause=0&amp;player_id=0&amp;app_id=205435"
+                    ]
+
+                ]
+            }
+        ],
+        {
+
+            "type": "finish",
+            "name": "Thank you",
+            "content": "Thank you for your participation! <br> *required fields<br><br>",
+            "showResults": false,
+            "writeResults": true,
+            "questionnaire": [
+                {
+                    "type": "number",
+                    "label": "*What's your age in years?",
+                    "name": "age",
+                    "min": 0,
+                    "max": 100,
+                    "default": 0
+                },
+                {
+                    "type": "options",
+                    "name": "gender",
+                    "label": "*How would you identify yourself (gender)?",
+                    "response": [
+                        {
+                            "value": "female",
+                            "label": "Female"
+                        },
+                        {
+                            "value": "male",
+                            "label": "Male"
+                        },
+                        {
+                            "value": "other",
+                            "label": "Other"
+                        }
+                    ]
+                },
+                {
+                    "type": "likert",
+                    "label": "How familiar are you with virtual characters ?",
+                    "name": "video_characters",
+                    "response": [
+                        {
+                            "value": "1",
+                            "label": "1 - Not at all"
+                        },
+                        {
+                            "value": "2",
+                            "label": "2"
+                        },
+                        {
+                            "value": "3",
+                            "label": "3"
+                        },
+                        {
+                            "value": "4",
+                            "label": "4 - Moderately"
+                        },
+                        {
+                            "value": "5",
+                            "label": "5"
+                        },
+                        {
+                            "value": "6",
+                            "label": "6"
+                        },
+                        {
+                            "value": "7",
+                            "label": "7 - Extremely"
+                        }
+                    ]
+
+                },
+                {
+                    "type": "likert",
+                    "label": "How much do you trust technology in general ?",
+                    "name": "trust",
+                    "response": [
+                        {
+                            "value": "1",
+                            "label": "1 - Not at all"
+                        },
+                        {
+                            "value": "2",
+                            "label": "2"
+                        },
+                        {
+                            "value": "3",
+                            "label": "3"
+                        },
+                        {
+                            "value": "4",
+                            "label": "4 - Moderately"
+                        },
+                        {
+                            "value": "5",
+                            "label": "5"
+                        },
+                        {
+                            "value": "6",
+                            "label": "6"
+                        },
+                        {
+                            "value": "7",
+                            "label": "7 - Extremely"
+                        }
+                    ]
+                },
+                {
+                    "type": "long_text",
+                    "label": "Any other comments?",
+                    "name": "other",
+                    "optional": true
+                }
+            ]
+        }
+    ],
+    "remoteFailService": "/fail"
+}
