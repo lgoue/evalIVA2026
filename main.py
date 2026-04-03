@@ -125,7 +125,7 @@ def index(
         blocked = db.status.find(
             {"status": {"$in": ["DONE", "ACTIVE"]}, "testId": test_id}
         )
-        blocked_files = [x["experiment_file"] for x in blocked]
+        blocked_files = []
 
         config_path = Path("configs") / re.sub(r"\W+", "", test_id)
         potential_files = [
