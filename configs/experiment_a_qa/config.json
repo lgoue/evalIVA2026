@@ -77,7 +77,7 @@
                 "type": "videomq",
                 "id": "controle_low_male",
                 "name": "Rate the virtual character behavior",
-                "content": "Please watch this video and answer the following questions about the virtual character.",
+                "content": "Please watch this video and answer the following questions about the virtual character. <br> The question is : What is the official currency of the United Confederation of Nations? <br><br> Answer 1: the Global Union Dollar (GUD) <br> <br> Answer 2: The United Confederation Credit (UCC)",
                 "question": [
                     [
                         "QA1",
